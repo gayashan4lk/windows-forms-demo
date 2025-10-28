@@ -17,7 +17,7 @@
 
             try
             {
-                var result = GcdCalculator.CaculateGCDArray(arr1, arr2);
+                var result = GcdCalculator.CalculateGcdArray(arr1, arr2);
 
                 Console.WriteLine(string.Join(",", result));
             }
