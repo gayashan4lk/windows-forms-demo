@@ -19,6 +19,23 @@ namespace SimpleAppNet9
             {
                 MessageBox.Show("Please enter a valid number", "Invalid input", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+
+            if(number < 0 || number >= 30)
+            {
+                MessageBox.Show("Please enter a numbe between 0 ", "Invalid input", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
+            var numbers = new int[number];
+
+            for (int i = 0; i < number; i++)
+            {
+                numbers[i] = i+1;
+            }
+
+            foreach (int i in numbers)
+            {
+                lblResult.Text = i.ToString();
+            }
         }
     }
 }
