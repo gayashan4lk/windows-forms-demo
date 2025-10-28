@@ -16,5 +16,33 @@ namespace PictureViewer
         {
             InitializeComponent();
         }
+
+        private void btnShow_Click(object sender, EventArgs e)
+        {
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                
+            }
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBackground_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbStretch_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

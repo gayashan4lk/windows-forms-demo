@@ -80,6 +80,7 @@
             this.cbStretch.TabIndex = 1;
             this.cbStretch.Text = "Stretch";
             this.cbStretch.UseVisualStyleBackColor = true;
+            this.cbStretch.CheckedChanged += new System.EventHandler(this.cbStretch_CheckedChanged);
             // 
             // flowLayoutPanel1
             // 
@@ -103,6 +104,7 @@
             this.btnShow.TabIndex = 0;
             this.btnShow.Text = "Show a picture";
             this.btnShow.UseVisualStyleBackColor = true;
+            this.btnShow.Click += new System.EventHandler(this.btnShow_Click);
             // 
             // btnClear
             // 
@@ -113,6 +115,7 @@
             this.btnClear.TabIndex = 1;
             this.btnClear.Text = "Clear the picture";
             this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnBackground
             // 
@@ -123,6 +126,7 @@
             this.btnBackground.TabIndex = 2;
             this.btnBackground.Text = "Set the background color";
             this.btnBackground.UseVisualStyleBackColor = true;
+            this.btnBackground.Click += new System.EventHandler(this.btnBackground_Click);
             // 
             // btnClose
             // 
@@ -133,6 +137,7 @@
             this.btnClose.TabIndex = 3;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // openFileDialog1
             // 
