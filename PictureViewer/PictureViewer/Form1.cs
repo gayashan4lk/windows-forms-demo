@@ -45,7 +45,14 @@ namespace PictureViewer
 
         private void cbStretch_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (cbStretch.Checked)
+            {
+                pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            }
+            else
+            {
+                pictureBox1.SizeMode = PictureBoxSizeMode.Normal;
+            }
         }
     }
 }
