@@ -15,11 +15,16 @@
                                    .Select(int.Parse)
                                    .ToArray() ?? new int[0];
 
-            var result = GcdCalculator.CaculateGCDArray(arr1, arr2);
+            try
+            {
+                var result = GcdCalculator.CaculateGCDArray(arr1, arr2);
 
-            Console.WriteLine(string.Join(",", result));
+                Console.WriteLine(string.Join(",", result));
+            }
+            catch (Exception ex)
+            {
+                Console.Write($"!! Exception occured: {ex.Message}");
+            }
         }
-
-        
     }
 }
