@@ -28,12 +28,55 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            txtNumber = new TextBox();
+            btnSubmit = new Button();
+            lblResult = new Label();
+            SuspendLayout();
+            // 
+            // txtNumber
+            // 
+            txtNumber.Location = new Point(43, 26);
+            txtNumber.Name = "txtNumber";
+            txtNumber.Size = new Size(100, 23);
+            txtNumber.TabIndex = 0;
+            // 
+            // btnSubmit
+            // 
+            btnSubmit.Location = new Point(43, 68);
+            btnSubmit.Name = "btnSubmit";
+            btnSubmit.Size = new Size(75, 23);
+            btnSubmit.TabIndex = 1;
+            btnSubmit.Text = "button1";
+            btnSubmit.UseVisualStyleBackColor = true;
+            btnSubmit.Click += btnSubmit_Click;
+            // 
+            // lblResult
+            // 
+            lblResult.AutoSize = true;
+            lblResult.Location = new Point(43, 106);
+            lblResult.Name = "lblResult";
+            lblResult.Size = new Size(187, 15);
+            lblResult.TabIndex = 2;
+            lblResult.Text = "Please enter a number and submit";
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(lblResult);
+            Controls.Add(btnSubmit);
+            Controls.Add(txtNumber);
+            Name = "Form1";
+            Text = "Form1";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private TextBox txtNumber;
+        private Button btnSubmit;
+        private Label lblResult;
     }
 }

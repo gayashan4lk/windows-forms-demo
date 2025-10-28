@@ -6,5 +6,19 @@ namespace SimpleAppNet9
         {
             InitializeComponent();
         }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            string input = txtNumber.Text;
+
+            if (int.TryParse(input, out int number))
+            {
+                lblResult.Text = $"You entered: {number}";
+            }
+            else
+            {
+                MessageBox.Show("Please enter a valid number", "Invalid input", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
     }
 }
