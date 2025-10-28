@@ -36,6 +36,8 @@
             this.btnClear = new System.Windows.Forms.Button();
             this.btnBackground = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.tblLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picbxMain)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
@@ -132,6 +134,13 @@
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            this.openFileDialog1.Filter = "JPEG Files (*.jpg)|*.jpg|PNG Files (*.png)|*.png|BMP Files (*.bmp)|*.bmp|All file" +
+    "s (*.*)|*.*";
+            this.openFileDialog1.Title = "Select a image file";
+            // 
             // frmPictureViewer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -159,6 +168,8 @@
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnBackground;
         private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.ColorDialog colorDialog1;
     }
 }
 
