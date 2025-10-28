@@ -21,23 +21,26 @@ namespace PictureViewer
         {
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                
+                pictureBox1.Load(openFileDialog1.FileName);
             }
         }
 
         private void btnClear_Click(object sender, EventArgs e)
         {
-
+            pictureBox1.Image = null;
         }
 
         private void btnBackground_Click(object sender, EventArgs e)
         {
-
+            if (colorDialog1.ShowDialog() == DialogResult.OK)
+            {
+                pictureBox1.BackColor = colorDialog1.Color;
+            }
         }
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         private void cbStretch_CheckedChanged(object sender, EventArgs e)

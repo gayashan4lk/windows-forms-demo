@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.tblLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.picbxMain = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.cbStretch = new System.Windows.Forms.CheckBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.btnShow = new System.Windows.Forms.Button();
@@ -39,7 +39,7 @@
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.tblLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picbxMain)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,7 +48,7 @@
             this.tblLayoutPanel1.ColumnCount = 2;
             this.tblLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tblLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 85F));
-            this.tblLayoutPanel1.Controls.Add(this.picbxMain, 0, 0);
+            this.tblLayoutPanel1.Controls.Add(this.pictureBox1, 0, 0);
             this.tblLayoutPanel1.Controls.Add(this.flowLayoutPanel1, 1, 1);
             this.tblLayoutPanel1.Controls.Add(this.cbStretch, 0, 1);
             this.tblLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -60,16 +60,16 @@
             this.tblLayoutPanel1.Size = new System.Drawing.Size(626, 385);
             this.tblLayoutPanel1.TabIndex = 0;
             // 
-            // picbxMain
+            // pictureBox1
             // 
-            this.picbxMain.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.tblLayoutPanel1.SetColumnSpan(this.picbxMain, 2);
-            this.picbxMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.picbxMain.Location = new System.Drawing.Point(3, 3);
-            this.picbxMain.Name = "picbxMain";
-            this.picbxMain.Size = new System.Drawing.Size(620, 340);
-            this.picbxMain.TabIndex = 0;
-            this.picbxMain.TabStop = false;
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.tblLayoutPanel1.SetColumnSpan(this.pictureBox1, 2);
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(620, 340);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // cbStretch
             // 
@@ -156,7 +156,7 @@
             this.Text = "Picture Viewer";
             this.tblLayoutPanel1.ResumeLayout(false);
             this.tblLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picbxMain)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
@@ -166,7 +166,7 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tblLayoutPanel1;
-        private System.Windows.Forms.PictureBox picbxMain;
+        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.CheckBox cbStretch;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Button btnShow;
